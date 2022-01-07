@@ -46,10 +46,20 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                
+                <h2>What I Do In My Free Time — # of Hours Per Week </h2>
+            </div>
+        </div>
+        <div class="col-md-10" >
+            <canvas id="radarChart"></canvas>
+        </div>   
             <div class="py-5 bg-image-full">
                 <img src="assets/elaine.jpg" class="img-fluid" alt="Responsive image">
-            </div>           
-
+            </div>          
+        
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mackenzie Kane 2021 
@@ -63,6 +73,43 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/mdb.js"></script>
+        <script>
+            //radar
+            var ctxR = document.getElementById("radarChart").getContext('2d');
+            var myRadarChart = new Chart(ctxR, {
+                type: 'radar',
+                data: {
+                    labels: ["Beer Drinking", "Rock Climbing", "Mountain Biking", "Squash", "Pickelball", "Kayaking", "River Float", "Gaming", "Designing", "Movies/Shows", "Backcounrty Skiing", "Cross County Skiing"],
+                    datasets: [{
+                        label: "Summer",
+                        data: [3, 6, 3.5, 3, 1, 2, 2, 4, 2, 6, 0, 0],
+                        backgroundColor: [
+                            'rgba(255, 159, 64, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255, 159, 64, 1)',
+                        ],
+                        borderWidth: 2
+                    },
+                               {
+                                   label: "Winter",
+                                   data: [5, 7, 0, 3, 1, 0, 0, 5, 3, 8, 3, 3],
+                                   backgroundColor: [
+                                       'rgba(54, 162, 235, 0.2)',
+                                   ],
+                                   borderColor: [
+                                       'rgba(54, 162, 235, 1)',
+                                   ],
+                                   borderWidth: 2
+                               }
+                              ]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        </script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/scripts.js"></script>
