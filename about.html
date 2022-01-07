@@ -47,19 +47,21 @@
                 </div>
             </div>
         </section>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                
-                <h2>What I Do In My Free Time — # of Hours Per Week </h2>
+        <section class="py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>Interests & Hobbies </h2>
+                    <p class="lead">(Hours Per Week)</p>
+                    <div class="py-5"></div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-10" >
-            <canvas id="radarChart"></canvas>
-        </div>   
+            <div class="align-content-sm-center" >
+                <canvas id="radarChart"></canvas>
+            </div>   
+        </section>
             <div class="py-5 bg-image-full">
                 <img src="assets/elaine.jpg" class="img-fluid" alt="Responsive image">
             </div>          
-        
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mackenzie Kane 2021 
@@ -80,28 +82,28 @@
             var myRadarChart = new Chart(ctxR, {
                 type: 'radar',
                 data: {
-                    labels: ["Beer Drinking", "Rock Climbing", "Mountain Biking", "Squash", "Pickelball", "Kayaking", "River Float", "Gaming", "Designing", "Movies/Shows", "Backcounrty Skiing", "Cross County Skiing"],
+                    labels: ["Mountain Biking", "Rock Climbing", "Beer Drinking", "Squash", "Pickelball", "Kayaking", "River Float", "Gaming", "Designing", "Backcounrty Skiing", "Cross County Skiing", "My Dogs", "Movies/Shows"],
                     datasets: [{
                         label: "Summer",
-                        data: [3, 6, 3.5, 3, 1, 2, 2, 4, 2, 6, 0, 0],
+                        data: [3.5, 6, 3, 3, 1, 2, 2, 4, 2, 0, 0, 7, 6],
                         backgroundColor: [
                             'rgba(255, 159, 64, 0.2)',
                         ],
                         borderColor: [
                             'rgba(255, 159, 64, 1)',
                         ],
-                        borderWidth: 2
+                        borderWidth: 1.5
                     },
                                {
                                    label: "Winter",
-                                   data: [5, 7, 0, 3, 1, 0, 0, 5, 3, 8, 3, 3],
+                                   data: [0, 7, 5, 3, 1, 0, 0, 5, 3, 3, 3, 7, 6],
                                    backgroundColor: [
                                        'rgba(54, 162, 235, 0.2)',
                                    ],
                                    borderColor: [
                                        'rgba(54, 162, 235, 1)',
                                    ],
-                                   borderWidth: 2
+                                   borderWidth: 1.5
                                }
                               ]
                 },
