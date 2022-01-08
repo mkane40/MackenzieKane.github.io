@@ -30,10 +30,22 @@
         <!-- Header - set the background image for the header in the line below-->
         
         <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-            <div class="text-center my-5">
-                <h1 class="text-white fs-3 fw-bolder">Resume & Curriculum Vitae </h1>
-                <p class="text-white-50 mb-0">Take a look below...</p>
-            </div>
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+            
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <!-- The header content -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <div class="text-center my-3">
+                            <h1 class="text-white fs-1">Resume & Curriculum Vitae</h1>
+                            <p class="text-white-20 mb-0">Find Documents Below
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
         </header>
     <section class="py-3">
         <div class="container my-5">
@@ -44,7 +56,8 @@
                     </div>
                 </div>
             </div>
-        </div>             
+        </div>
+        <div class= "py-5"></div>
         <div class="container my-6">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -55,9 +68,6 @@
             </div>
         </div>
         </section>
-        <div class="py-5 bg-image-full">
-                <img src="assets/sanddunes.jpg" class="img-fluid" alt="Responsive image">
-        </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mackenzie Kane 2021 

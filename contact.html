@@ -29,26 +29,34 @@
         </nav>
         <!-- Header - set the background image for the header in the line below-->
         <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-            <div class="text-center my-5">
-                <h1 class="text-white fs-3 fw-bolder">Connect With Me: </h1>
-                <p class="text-warning">Email</p>
-                <p class="bg-warning">MJKANE1192@GMAIL.COM</p>
-                <div class="col"><hr></div>
-                    <p class="text-warning">Instagram</p>
-                    <a href = "https://www.instagram.com/mackenzie_j_kane_/">
-                        <ion-icon size="large" name="logo-instagram"></ion-icon>
-                    </a>
-                <div class="col"><hr></div>
-                    <p class="text-warning">Linkedin</p>
-                    <a href = "https://www.linkedin.com/in/mackenzie-kane-008481117/">
-                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                    </a>
-            </div>
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+            
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <!-- The header content -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <div class="text-center my-3">
+                            <h1 class="text-white fs-1">Connect With Me</h1>
+                            <p class="text-warning">Email</p>
+                            <p class="bg-warning">MJKANE1192@GMAIL.COM</p>
+                            <div class="col"><hr></div>
+                                <p class="text-warning">Instagram</p>
+                                <a href = "https://www.instagram.com/mackenzie_j_kane_/">
+                                    <ion-icon size="large" name="logo-instagram"></ion-icon>
+                                </a>
+                            <div class="col"><hr></div>
+                                <p class="text-warning">Linkedin</p>
+                                <a href = "https://www.linkedin.com/in/mackenzie-kane-008481117/">
+                                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </header>
         <!-- Content section-->
-        <div class="py-5 bg-image-full">
-                <img src="assets/fourpassloop.jpg" class="img-fluid" alt="Responsive image">
-        </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Mackenzie Kane 2021 
@@ -59,6 +67,7 @@
                         <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </div>
+        
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
