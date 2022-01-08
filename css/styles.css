@@ -11318,7 +11318,7 @@ header video {
 }
 
 header .container {
-  position: absolute;
+  position: relative;
   z-index: 2;
 }
 
