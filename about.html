@@ -28,11 +28,23 @@
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-            <div class="text-center my-5">
-                <img class="img-fluid rounded-3 mb-4" src="..\assets\pfpic.jpg" alt="..." />
-                <h1 class="text-white fs-3 fw-bolder">Mackenzie Kane</h1>
-                <p class="text-white-50 mb-0">G I S</p>
+        <header>
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+            
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="assets/climbing_Trim.mp4" type="video/mp4">
+            </video>
+            
+            <!-- The header content -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="text-black fs-1">Mackenzie Kane</h1>
+                        <p class="text-black-50 mb-0">G I S</p>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- Content section-->
