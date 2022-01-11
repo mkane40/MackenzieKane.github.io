@@ -149,7 +149,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 p {
@@ -11300,12 +11300,13 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  white-space: nowrap
 }
 
 header video {
   position: absolute;
-  top: 75%;
-  left: 75%;
+  top: 65%;
+  left: 65%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -11314,12 +11315,12 @@ header video {
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-57%);
+  transform: translateX(-65%) translateY(-57%);
 }
 
 header .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 header .overlay {
