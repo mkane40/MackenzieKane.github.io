@@ -177,22 +177,7 @@
         <script src="js/mdb.js"></script>
         <!-- mdb graphs charts-->
         <script>
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 20) {
-                        $('#toTopBtn').fadeIn();
-                    } else {
-                        $('#toTopBtn').fadeOut();
-                    }
-                });
-                
-                $('#toTopBtn').click(function() {
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, 1000);
-                    return false;
-                });
-            });
+            
             var ctx = document.getElementById("myChart").getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'bar',
@@ -249,7 +234,9 @@
             });
             
         </script>
-        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+        <button type="button" class="btn btn-outline-warning btn-sm" id="btn-back-to-top">
+                <img src="/assets/chevron-up.svg" width="25" height="" role="img">
+        </button>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
