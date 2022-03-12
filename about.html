@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mackenzie J Kane  - GIS Professional</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/assets/mjk_1.png" alt="" width="40%" height="40%" role="img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home/Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume/CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header video>
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+            
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <div class="col-lg-6">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/climbing_Trim.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- The header content -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-wrap align-items-center">
+                    <div class="w-100 text-white">
+                        <div class="text-center my-3">
+                            <code class="text-white fs-1">Mackenzie Kane <small class="text-muted"> — About Me</small></code>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </header>
+        <!-- Content section-->
+        <section>
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-3 mb-4" src="..\assets\pfpic.jpg">
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>About Me </h2>
+                        <p class="lead">GIS Technician — Black Hills Energy</p>
+                        <p class="mb-0">I am from Monument, CO where I grew up mountain biking, skiing, and hiking through trees and over boulders.  I have become obsessed with indoor rock climbing now that I live in a state without mountains to play. I love to go backpacking (Maroon Bells 4-pass, Escalante/Glen Canyon, San Isabel National Forest, etc.) mountain biking, ski/snowboard, & rock climbing.  Great lover of Seinfeld.  I am actively enrolled at the University of Wisconsin, Madison for a M.S. degree in Cartography and GIS - Online GIS Development Program. I have a B.A. degree in Geography & Environmental Studies & a GIS Certificate – Graduated Magna Cum Laude & with Departmental Honors Highest Distinction at the University of Colorado at Colorado Springs (2018).  I believe geospatial computing & GIS web integration is invaluable in todays data driven industry. My favorite GIS components include geovisualization, risk modeling, & scripting automation. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>Interests & Hobbies </h2>
+                    <p class="lead">(Hours Per Week)</p>
+                    <div class="py-3"></div>
+                </div>
+            </div>
+            <div class="align-content-sm-center" >
+                <canvas id="radarChart"></canvas>
+            </div>
+            <div class="py-5"></div>
+        </section>
+            <div class="py-0 bg-image-full">
+                <img src="assets/elaine.jpg" class="img-fluid" alt="Responsive image">
+            </div>          
+        <!-- Footer-->
+        <footer class="py-5 bg-image-full" style="background-image: url(assets/Contours.png)">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; <img src="/assets/mjk_1.png" alt="" width="5%" height="5%" role="img"> Mackenzie Kane 2022 
+            <a href = "https://www.instagram.com/mackenzie_j_kane_/">
+                <ion-icon size="small" name="logo-instagram"></ion-icon>
+            </a>
+            <a href = "https://www.linkedin.com/in/mackenzie-kane-008481117/">
+                <ion-icon size="small" name="logo-linkedin"></ion-icon>
+            </a>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/mdb.js"></script>
+        <script>
+            //radar
+            var ctxR = document.getElementById("radarChart").getContext('2d');
+            var myRadarChart = new Chart(ctxR, {
+                type: 'radar',
+                data: {
+                    labels: ["Mountain Biking", "Rock Climbing", "Beer Drinking", "Squash", "Pickelball", "Kayaking", "River Float", "Gaming", "Designing", "Backcounrty Skiing", "Cross County Skiing", "My Dogs", "Movies/Shows"],
+                    datasets: [{
+                        label: "Summer",
+                        data: [3.5, 6, 3, 3, 1, 2, 2, 4, 2, 0, 0, 7, 6],
+                        backgroundColor: [
+                            'rgba(255, 159, 64, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255, 159, 64, 1)',
+                        ],
+                        borderWidth: 1.5
+                    },
+                               {
+                                   label: "Winter",
+                                   data: [0, 7, 5, 3, 1, 0, 0, 5, 3, 3, 3, 7, 6],
+                                   backgroundColor: [
+                                       'rgba(54, 162, 235, 0.2)',
+                                   ],
+                                   borderColor: [
+                                       'rgba(54, 162, 235, 1)',
+                                   ],
+                                   borderWidth: 1.5
+                               }
+                              ]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        </script>
+        <button type="button" class="btn btn-outline-warning btn-sm" id="btn-back-to-top">
+                <img src="/assets/chevron-up.svg" width="25" height="" role="img">
+        </button>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>
