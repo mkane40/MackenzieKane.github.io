@@ -9,6 +9,9 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="lib/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -187,9 +190,34 @@
         </section>
         <div class="row">
             <div class="col"><hr></div>
-            <div class="col-auto">Keep Scrolling!</div>
+            <div class="col-auto">Keep Scrolling</div>
             <div class="col"><hr></div>
         </div>
+
+         <!-- Content section-->
+         <section class="py-0">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Fertility Rates Across Europe - 1830 & 2019</h2>
+                        <p class="lead">This map displays fertility rates (average number of children per women across Europe in 30-year increments [not accounting for 2010 to 2019].  Japan and United States of America were added to provide additional information outside of the region.  Moving through time shows a sharp decline in average fertility rate bringing it to about 2.5 today.  Rates have halved just within the last 50 years.  Why is this happening? One, empowerment/success of women in society.  Two, increased care and well-being of children (Roser, 2014).  An article by James Gallagher, "Fertility rate: 'Jaw-dropping' global crash in children being born," describes a world in which populations in many countries will fall to about half of current populations today.  What kind of consequences will this present in the future?  Less consumption of resources? Shorter commute time? However, Gallagher discusses the negative consequence this will bring; in particular, an inverted age structure (more old people than young people).</p>
+                        <div class="container my-3">
+                            <div class="row justify-content-center">
+                                <div class="text-center">
+                                    <div id="map" class = "leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" style = "position: relative"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col"><hr></div>
+            <div class="col-auto">Scroll Further</div>
+            <div class="col"><hr></div>
+        </div>
+        </section>
+
         <!-- Content section-->
         <section class="py-0">
             <div class="container my-5">
@@ -286,7 +314,11 @@
                 <img src="/assets/chevron-up.svg" width="25" height="" role="img">
         </button>
         <!-- Core theme JS-->
+        <script type="text/javascript" src="lib/jquery3_6_0.js"></script>
+        <script src="lib/leaflet-src.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
